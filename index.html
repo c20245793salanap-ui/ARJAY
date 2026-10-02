@@ -13,48 +13,82 @@
     <h1 class="text-3xl font-bold underline text-red-700">
         ARJAY
     </h1>
-    <button id="switch">Switch</button>
+    <button>Switch</button>
+
+
     <header>
         <nav>
             <span>@mwuhihihihi</span>
             <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#projects"
+                        class="text-black-500 hover:text-pink-700 transition-colors duration-500">Projects</a>
+                <li><a href="#services"
+                        class="text-black-500 hover:text-pink-700 transition-colors duration-500">Services</a>
+                <li><a href="#contact" class="text-black-500 hover:text-pink-700 transition-colors duration-500">Contact
+                        Me</a>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <section id="projects">
-            <h2 class="projects">My Projects</h2>
-            <p>Personal portfolio, payroll system, company website, startup website, and compliance monitoring system.
-            </p>
+    <main class="m-[50px] flex flex-wrap gap-[30px] p-[50px]">
+        <section id="projects" class="border-2 border-black p-6 w-[350px] h-[525px] mt-4 rounded-lg">
+            <h2 class="contact">PROJECTS</h2>
+
+            <h2 class="text-3xl font-bold text-red-800">
+                Personal portfolio, payroll system, company website, startup website, and compliance monitoring
+                system.
+            </h2>
         </section>
 
-        <section id="services">
-            <h2 class="services">My Services</h2>
-            <p>Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
-                Analyst</p>
+        <section id="services" class="border-2 border-black p-6 w-[350px] h-[525px] mt-4 rounded-lg">
+            <h2 class="contact">SERVICES</h2>
+            <h2 class="text-3xl font-bold text-red-800">
+                Website Creation, System Creation, AI Automation, Database Management, Project Management, Systems
+                Analyst
+            </h2>
+
+
         </section>
 
-        <section id="contact">
-            <h2 class="contact">Let's build together!</h2>
+        <section id="contact" flex items-center>
+
             <form action="#">
-                <!-- Name -->
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
 
-                <!-- Email -->
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" required>
+                <div class="w-[385px] h-[580px] border-2 border-black rounded-lg p-7 ">
 
-                <!-- Message -->
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5" required></textarea>
+                    <p class="text-lg mb-3">Let's build together!</p>
 
-                <!-- Submit -->
-                <button type="submit">Send Message</button>
+                    <div class="grid grid-cols-2 gap-6 ">
+                        <label>
+                            <span class="block mb-1">Name</span>
+                            <input class="w-full border rounded p-2">
+                        </label>
+
+                        <label>
+                            <span class="block mb-1">Email</span>
+                            <input type="email" class="w-full border rounded p-2">
+                        </label>
+                    </div>
+
+                    <label class="block mt-5 ">
+                        <span class="block mb-1 overflow-hidden ">Message</span>
+                        <textarea class="w-full h-32 border rounded p-2"></textarea>
+                    </label>
+
+                    <button
+                        class=" w-full border rounded p-2 block mx-auto mt-5 bg-white-500 px-4 py-1  text-black-600 hover:border-transparent hover:bg-blue-600 hover:text-white active:bg-blue-700 ...">
+                        Send Message
+                    </button>
+
+
+
+
+
+
+
+                </div>
+
+
             </form>
         </section>
     </main>
